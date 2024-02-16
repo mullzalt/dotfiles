@@ -1,0 +1,21 @@
+bindkey '^ ' autosuggest-accept
+
+# enable ASDF
+. "$HOME/.asdf/asdf.sh"
+
+export EDITOR=nvim
+export VISUAL=nvim
+export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
+
+# Aliases
+alias f="~/.local/bin/tmux-sessionizer"
+alias ff="cd ~ && cd \$(find * -type d -mindepth 1 -maxdepth 1 | fzf)"
+alias fd="cd ~/dotfiles && cd \$(find * -type d | fzf)"
+
+alias q="exit"
+alias ~="cd ~"
+alias so="cd ~ && source ~/.zshrc"
+
+alias v="nvim ."
+alias vi="nvim"
+alias vim="nvim"
